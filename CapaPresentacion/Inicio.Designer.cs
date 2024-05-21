@@ -46,6 +46,8 @@
             this.menuSucursales = new FontAwesome.Sharp.IconMenuItem();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.contenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menu.SuspendLayout();
             this.SuspendLayout();
@@ -57,17 +59,18 @@
             this.menutitulo.Location = new System.Drawing.Point(0, 0);
             this.menutitulo.Name = "menutitulo";
             this.menutitulo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutitulo.Size = new System.Drawing.Size(1215, 75);
+            this.menutitulo.Size = new System.Drawing.Size(1214, 75);
             this.menutitulo.TabIndex = 1;
             this.menutitulo.Text = "menuStrip2";
             // 
             // contenedor
             // 
             this.contenedor.BackColor = System.Drawing.Color.LavenderBlush;
+            this.contenedor.Controls.Add(this.label4);
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(205, 75);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(1010, 580);
+            this.contenedor.Size = new System.Drawing.Size(1009, 581);
             this.contenedor.TabIndex = 3;
             // 
             // label2
@@ -189,7 +192,7 @@
             this.submenucategoria.IconColor = System.Drawing.Color.Black;
             this.submenucategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenucategoria.Name = "submenucategoria";
-            this.submenucategoria.Size = new System.Drawing.Size(170, 26);
+            this.submenucategoria.Size = new System.Drawing.Size(180, 26);
             this.submenucategoria.Text = "Categoria";
             this.submenucategoria.Click += new System.EventHandler(this.submenucategoria_Click);
             // 
@@ -199,7 +202,7 @@
             this.submenuproducto.IconColor = System.Drawing.Color.Black;
             this.submenuproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuproducto.Name = "submenuproducto";
-            this.submenuproducto.Size = new System.Drawing.Size(170, 26);
+            this.submenuproducto.Size = new System.Drawing.Size(180, 26);
             this.submenuproducto.Text = "Producto";
             this.submenuproducto.Click += new System.EventHandler(this.submenuproducto_Click);
             // 
@@ -276,7 +279,7 @@
             this.menu.Margin = new System.Windows.Forms.Padding(10, 15, 10, 15);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.menu.Size = new System.Drawing.Size(205, 580);
+            this.menu.Size = new System.Drawing.Size(205, 581);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -288,11 +291,19 @@
             this.label3.Size = new System.Drawing.Size(1231, 5);
             this.label3.TabIndex = 14;
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.SystemColors.Desktop;
+            this.label4.Location = new System.Drawing.Point(-1, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(5, 600);
+            this.label4.TabIndex = 16;
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1215, 655);
+            this.ClientSize = new System.Drawing.Size(1214, 656);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.titulo);
@@ -307,6 +318,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Inicio_Load);
+            this.contenedor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
@@ -333,6 +345,7 @@
         private FontAwesome.Sharp.IconMenuItem menuSucursales;
         private System.Windows.Forms.MenuStrip menu;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
