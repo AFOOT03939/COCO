@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.menutitulo = new System.Windows.Forms.MenuStrip();
             this.contenedor = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblusuario = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -46,7 +47,6 @@
             this.menuSucursales = new FontAwesome.Sharp.IconMenuItem();
             this.menu = new System.Windows.Forms.MenuStrip();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.contenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menu.SuspendLayout();
@@ -72,6 +72,14 @@
             this.contenedor.Name = "contenedor";
             this.contenedor.Size = new System.Drawing.Size(1009, 581);
             this.contenedor.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(-1, 5);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(5, 600);
+            this.label4.TabIndex = 16;
             // 
             // label2
             // 
@@ -192,7 +200,7 @@
             this.submenucategoria.IconColor = System.Drawing.Color.Black;
             this.submenucategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenucategoria.Name = "submenucategoria";
-            this.submenucategoria.Size = new System.Drawing.Size(180, 26);
+            this.submenucategoria.Size = new System.Drawing.Size(170, 26);
             this.submenucategoria.Text = "Categoria";
             this.submenucategoria.Click += new System.EventHandler(this.submenucategoria_Click);
             // 
@@ -202,7 +210,7 @@
             this.submenuproducto.IconColor = System.Drawing.Color.Black;
             this.submenuproducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.submenuproducto.Name = "submenuproducto";
-            this.submenuproducto.Size = new System.Drawing.Size(180, 26);
+            this.submenuproducto.Size = new System.Drawing.Size(170, 26);
             this.submenuproducto.Text = "Producto";
             this.submenuproducto.Click += new System.EventHandler(this.submenuproducto_Click);
             // 
@@ -285,19 +293,11 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.SystemColors.Desktop;
+            this.label3.BackColor = System.Drawing.SystemColors.ControlText;
             this.label3.Location = new System.Drawing.Point(-3, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(1231, 5);
             this.label3.TabIndex = 14;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.SystemColors.Desktop;
-            this.label4.Location = new System.Drawing.Point(-1, 5);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(5, 600);
-            this.label4.TabIndex = 16;
             // 
             // Inicio
             // 

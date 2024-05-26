@@ -76,10 +76,10 @@ namespace CapaPresentacion
             string Texto_Html = Properties.Resources.PlantillaVenta.ToString();
             Negocio odatos = new CN_Negocio().ObtenerDatos();
 
-            Texto_Html = Texto_Html.Replace("@nombrenegocio", "CocoaBikini".ToUpper());
-            Texto_Html = Texto_Html.Replace("@docnegocio", odatos.RUC);
-            Texto_Html = Texto_Html.Replace("@direcnegocio", odatos.Direccion);
-            Texto_Html = Texto_Html.Replace("@numerodocumento", "00002".ToUpper());
+            Texto_Html = Texto_Html.Replace("@nombrenegocio", "CocoaBikiny".ToUpper());
+            Texto_Html = Texto_Html.Replace("@docnegocio", "10164121611".ToUpper());
+            Texto_Html = Texto_Html.Replace("@direcnegocio", "Calle Blvrd Sta Madre Nati 1, Las Cuentas, 45430 Zapotlanejo, Jal.".ToUpper());
+            Texto_Html = Texto_Html.Replace("@numerodocumento", "00008".ToUpper());
 
             Texto_Html = Texto_Html.Replace("@doccliente", "".ToUpper());
             Texto_Html = Texto_Html.Replace("@nombrecliente", "".ToUpper());
@@ -145,6 +145,11 @@ namespace CapaPresentacion
         }
 
         private void txttipodocumento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
